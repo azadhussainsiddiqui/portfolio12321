@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="hole-body">
+
+    <!-- NAVBAR -->
+    <nav class="crumbs">
+        <ul>
+            <!-- <li class="crumb"><a href="/">Home</a></li> -->
+            <li class="crumb"><a href="#2p">About</a></li>
+            <li class="crumb"><a href="#3p">Skills</a></li>
+            <li class="crumb"><a href="#4p">Projects</a></li>
+            <li class="crumb"><a href="#5p">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <div class="about-section" id="2p">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+I am a Computer Science student with a strong understanding of programming, data structures, algorithms, DBMS, and web development. I have developed strong logical thinking and problem-solving skills, and I am always working on improving my overall technical knowledge and practical understanding of software development.
+</p>
+        </div>
+
+        <img src="image/pic.avif" class="img-move" alt="Nature">
+    </div>
+
+    <!-- SKILLS -->
+    <ol class="skills" id="3p">
+        <li>C/C++</li>
+        <li>Python</li>
+        <li>HTML/CSS/JavaScript</li>
+        <li>DBMS</li>
+        <li>AWS Basics (EC2, S3)</li>
+    </ol>
+
+    <!-- PROJECTS -->
+    <div class="container" id="4p">
+        <div class="project"><h3>Next Basket Recommendation System</h3><br>
+            <div>Next Basket Recommendation System helps predict what a customer is likely to buy next based on their past purchases and shopping history.
+It uses simple machine learning methods like finding items that are often bought together and studying buying patterns over time.
+The system looks at how products are related, how often they are bought, and the gap between purchases.
+It is commonly used in online shopping apps to give better product suggestions and improve customer experience.
+This project shows my skills in machine learning, data analysis, and building recommendation systems.</div>
+        </div>
+        <div class="project"><h3>Job Application Tracker</h3><br>
+        <div>Job Application Tracker is a system that helps users organize and manage their job applications in one place.
+It allows tracking of applied jobs, company details, application status, and interview updates.
+The system helps users stay organized and never miss follow-ups or deadlines.
+It can include features like reminders, filters, and status updates (applied, shortlisted, rejected).
+This project demonstrates skills in web development, database management, and user-focused design.</div>
+        </div>
+        <div class="project"><h3>To-Do App</h3><br>
+        <div>
+            A To-Do App is a simple tool that helps users organize their daily tasks in one place.
+It allows adding, editing, and deleting tasks based on priority and deadlines.
+Users can mark tasks as completed to keep track of progress easily.
+It helps improve productivity by keeping work and personal tasks well organized.
+This project shows my skills in building clean, user-friendly, and practical applications.
+        </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="cont" id="5p">
+        <h3>Contact Me</h3>
+
+        <form action="/send" method="post">
+            <input type="text" placeholder="Name"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <textarea placeholder="Message"></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="foot">&copy; 2026</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

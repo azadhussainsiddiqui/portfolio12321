@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hole-body {
+    width: 100%;
+    background-color: #8bb8b8;
+}
+
+/* NAVBAR */
+.crumbs {
+    background-color: rgb(156, 189, 189);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.crumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.crumb {
+    list-style: none;
+    margin: 6px 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.crumb:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.about {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(54, 154, 154);
+    transition: 0.3s;
+}
+
+.about:hover {
+    transform: scale(1.05);
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* IMAGE */
+.img-move {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.img-move:hover {
+    transform: scale(1.05);
+}
+
+/* SKILLS */
+.skills {
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+    list-style: none;
+}
+
+/* PROJECT GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color: rgb(54, 154, 154);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* CONTACT */
+.cont {
+    padding: 20px;
+    text-align: center;
+}
+
+form input, textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 8px;
+}
+
+/* FOOTER */
+.foot {
+    background-color: rgb(180, 135, 222);
+    padding: 10px;
+    text-align: center;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    
+    .about-section {
+        flex-direction: column;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        margin: 20px;
+    }
+}
